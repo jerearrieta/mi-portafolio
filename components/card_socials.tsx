@@ -14,8 +14,8 @@ interface Socials {
 const CardSocials: React.FC<CardSocialProps> = ({ icons }) => {
   return (
     <>
-      {icons.map((icon) => (
-        <div className="rounded-xl border-2 border-gray-200 dark:border-gray-700 p-4 w-3/12 hover:border-gray-300 dark:hover:border-gray-500 hover:border-3 transition-all">
+      {icons.map((icon, i ) => (
+        <div key={i} className="rounded-xl border-2 border-gray-200 dark:border-gray-700 p-4 w-3/12 hover:border-gray-300 dark:hover:border-gray-500 hover:border-3 transition-all">
           <a href={icon.url} target="_blank">
             <div className="flex justify-center items-center gap-5 font-bold">
               <Image alt="social-icon" src={icon.icon} width={35} height={35} />
