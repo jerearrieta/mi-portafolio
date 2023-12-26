@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 
-export const roboto = Plus_Jakarta_Sans({ 
+export const jakarta = Plus_Jakarta_Sans({ 
   weight: '400', 
   preload: false,
 })
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} antialiased dark:bg-gray-800`} >{children}</body>
+      <body className={`${jakarta.className} antialiased dark:bg-gray-800`} >{children}</body>
     </html>
   )
 }
