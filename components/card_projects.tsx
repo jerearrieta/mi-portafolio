@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
+import { MagicMotion } from "react-magic-motion";
 
 
 interface ProjectCardProps {
@@ -64,7 +65,7 @@ const CardProject: React.FC<ProjectCardProps> = ({
                   height={400}
                 />
                 {toolTipVisible === tecnology.name && (
-                  <div className="absolute transform bg-white text-black p-1 text-sm rounded mt-1 ">
+                  <div className="absolute transform bg-indigo-100 text-indigo-500 dark:bg-white dark:text-black p-1 text-sm rounded mt-1 ">
                     <span className="">{tecnology.name}</span>
                   </div>
                 )}

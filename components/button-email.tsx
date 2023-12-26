@@ -52,7 +52,7 @@ const ButtonEmail: React.FC<IconsSvg> = ({ array }) => {
             alt="Icon-email" 
             />
           {toolTipVisible === icon.name && (
-            <div className="absolute transform bg-white text-black p-1 text-sm rounded mb-20">
+            <div className="absolute transform bg-indigo-100 text-indigo-500 dark:bg-white dark:text-black p-1 text-sm rounded mb-20">
               <span className="">{icon.name}</span>
             </div>
           )}

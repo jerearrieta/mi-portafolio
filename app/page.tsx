@@ -11,9 +11,6 @@ import Gmail from "@/components/email";
 import { useState } from "react";
 
 
-
-
-
 export default function Home() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
