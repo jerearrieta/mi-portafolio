@@ -13,6 +13,7 @@ interface Icons {
 const ButtonEmail: React.FC<IconsSvg> = ({ array }) => {
   const [toolTipVisible, setToolTipVisible] = useState<string | null>(null);
   const [emailCopied, setEmailCopied] = useState<boolean>(false);
+  const emailAddress = 'jerearrieta2254@gmail.com';
 
   const handleCopyClick = (email: string) => {
     navigator.clipboard.writeText(email).then(() => {
@@ -24,9 +25,12 @@ const ButtonEmail: React.FC<IconsSvg> = ({ array }) => {
       }, 1500);
     })
   }
+
   const handleRedirectClick = () => {
-    window.open('https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new', '_blank');
-  }
+    const emailLink = `mailto:${emailAddress}?subject=&body=`;
+    window.open(emailLink, '_blank');
+  };
+  
   return (
     <>
       {array.map((icon) => (
@@ -40,7 +44,7 @@ const ButtonEmail: React.FC<IconsSvg> = ({ array }) => {
           } 
           onMouseLeave={() => setToolTipVisible(null)}
           onClick={() => {
-            if(icon.name === 'Copy email') handleCopyClick('jeremias.arrieta2254@hotmail.com')
+            if(icon.name === 'Copy email') handleCopyClick('jerearrieta2254@gmail.com')
             else handleRedirectClick()
           }
           }

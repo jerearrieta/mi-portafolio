@@ -20,7 +20,7 @@ export default function CardEmail() {
     <>
       <div className="flex gap-3">
         <div className="rounded-xl bg-indigo-100 dark:bg-gray-700 p-2 w-full">
-          <p className="text-slate-600 dark:text-gray-300 pl-2">jeremias.arrieta2254@hotmail.com</p>
+          <p className="text-slate-600 dark:text-gray-300 pl-2">jerearrieta2254@gmail.com</p>
         </div>
         <div className="flex gap-3 ">
           {icons.map((icon, index) => (
