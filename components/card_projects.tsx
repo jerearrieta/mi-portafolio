@@ -26,7 +26,7 @@ const CardProject: React.FC<ProjectCardProps> = ({
   const [toolTipVisible, setToolTipVisible] = useState<string | null>(null);
 
   return (
-    <div>
+    <section>
       <div className="flex gap-5 mb-10">
         <a href={url} target="_blank">
           <div className="relative rounded-xl overflow-hidden flex bg-indigo-100 dark:bg-gray-700">
@@ -113,7 +113,7 @@ const CardProject: React.FC<ProjectCardProps> = ({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

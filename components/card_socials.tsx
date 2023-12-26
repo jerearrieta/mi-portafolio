@@ -13,7 +13,7 @@ interface Socials {
 
 const CardSocials: React.FC<CardSocialProps> = ({ icons }) => {
   return (
-    <>
+    <section>
       {icons.map((icon, i ) => (
         <div key={i} className="rounded-xl border-2 border-gray-200 dark:border-gray-700 p-4 w-3/12 hover:border-gray-300 dark:hover:border-gray-500 hover:border-3 transition-all">
           <a href={icon.url} target="_blank">
@@ -24,7 +24,7 @@ const CardSocials: React.FC<CardSocialProps> = ({ icons }) => {
           </a>
         </div>
       ))}
-    </>
+    </section>
   );
 };
 

@@ -34,7 +34,7 @@ export default function Header({ onToggleDarkMode, darkMode }: HeaderProps) {
   };
 
   return (
-    <div className="sticky top-0 z-10">
+    <section className="sticky top-0 z-10">
       <header className="flex justify-end items-center py-3 px-5 z-20 bg-white dark:bg-gray-800 bg-opacity-80 dark:bg-opacity-80 backdrop-blur-lg">
         <div className="hover:opacity-80 dark:hover:opacity-90 transition-all">
           <Image
@@ -47,6 +47,6 @@ export default function Header({ onToggleDarkMode, darkMode }: HeaderProps) {
           />
         </div>
       </header>
-    </div>
+    </section>
   );
 }
