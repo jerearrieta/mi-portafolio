@@ -1,12 +1,5 @@
-import { Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import type { Metadata } from 'next'
-
-export const jakarta = Plus_Jakarta_Sans({ 
-  weight: '400', 
-  preload: false,
-})
-
 
 export const metadata: Metadata = {
   title: 'JeremiasArrieta Portfolio',
@@ -20,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${jakarta.className} antialiased dark:bg-gray-800`} >{children}</body>
+      <body className='dark:bg-gray-800'>{children}</body>
     </html>
   )
 }
