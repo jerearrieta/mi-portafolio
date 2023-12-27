@@ -6,7 +6,7 @@ export default function AboutMe() {
       <div>
         <Image
           className="rounded-full border-8 shadow-md border-white dark:border-slate-900"
-          src="/images/profile.jpg"
+          src={'/images/profile.jpg'}
           width={180}
           height={180}
           alt="Profile"
