@@ -1,12 +1,13 @@
 import Image from "next/image";
 
 export default function AboutMe() {
+  const image = '/images/profile.jpg'
   return (
     <section className="flex flex-col sm:flex-row items-center gap-5">
       <div>
         <Image
           className="rounded-full border-8 shadow-md border-white dark:border-slate-900"
-          src={'/images/profile.jpg'}
+          src={image}
           width={180}
           height={180}
           alt="Profile"
