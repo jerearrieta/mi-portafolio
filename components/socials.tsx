@@ -1,7 +1,7 @@
 export default function Socials() {
   return (
     <section className="w-full">
-      <header className="font-bold text-2xl text-indigo-500 dark:text-white flex items-center gap-3 mt-10 mb-7">
+      <header className="font-bold text-2xl text-indigo-500 dark:text-white flex items-center gap-3 mt-10 mb-7 sm:px-0 px-5">
         <h2>Socials</h2>
         <div>
           <svg

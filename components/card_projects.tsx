@@ -27,7 +27,7 @@ const CardProject: React.FC<ProjectCardProps> = ({
 
   return (
     <section>
-      <div className="flex gap-5 mb-10">
+      <div className="sm:flex gap-5 mb-10 sm:px-0 px-5">
         <a href={url} target="_blank">
           <div className="relative rounded-xl overflow-hidden flex bg-indigo-100 dark:bg-gray-700">
             <div className="rounded-lg transition-all duration-500 hover:translate-x-5 hover:translate-y-5">
@@ -44,7 +44,7 @@ const CardProject: React.FC<ProjectCardProps> = ({
 
         <div className="flex flex-col self-center gap-3">
           <div>
-            <h3 className="font-bold text-3xl text-slate-600 dark:text-white">{title}</h3>
+            <h3 className="font-bold text-3xl text-slate-600 dark:text-white pt-2">{title}</h3>
           </div>
           <div>
             <p className="text-gray-600 dark:text-white text-lg">{description}</p>

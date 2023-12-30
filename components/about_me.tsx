@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutMe() {
   return (
-    <section className="flex flex-col sm:flex-row items-center gap-5">
+    <section className="flex flex-col sm:flex-row items-center gap-5 ">
       <div>
         <Image
           className="rounded-full border-8 shadow-md border-white dark:border-slate-900"
