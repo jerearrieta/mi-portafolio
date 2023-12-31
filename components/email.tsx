@@ -1,7 +1,7 @@
 export default function Email() {
   return (
     <section className="w-full">
-      <header className="font-bold text-2xl text-indigo-500 dark:text-white flex items-center gap-3 mt-10 mb-7">
+      <header className="font-bold text-2xl text-indigo-500 dark:text-white flex items-center gap-3 mt-10 mb-7 sm:mx-0 mx-5">
         <h2>
           Email
         </h2>

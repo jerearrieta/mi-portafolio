@@ -36,7 +36,7 @@ const ButtonEmail: React.FC<IconsSvg> = ({ array }) => {
       {array.map((icon) => (
         <button
           key={icon.name}
-          className="rounded-xl bg-indigo-500 dark:bg-indigo-500 w-16 flex items-center justify-center"
+          className="rounded-xl bg-indigo-500 dark:bg-indigo-500 w-12 sm:w-16 flex items-center justify-center"
           onMouseEnter={() => {
             if(emailCopied === true) setToolTipVisible(null)
             else setToolTipVisible(icon.name)

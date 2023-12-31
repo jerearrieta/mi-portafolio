@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import { MagicMotion } from "react-magic-motion";
 
 
 interface ProjectCardProps {
